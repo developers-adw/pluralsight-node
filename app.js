@@ -22,6 +22,6 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'Globomantics', data: ['a', 'b', 'c'] });
 });
 
-app.listen(3000, () => {
-  debug(`Listening on port ${chalk.magenta(PORT)}`);
+app.listen(PORT, () => {
+  debug(`listening on port ${chalk.green(PORT)}`);
 });
